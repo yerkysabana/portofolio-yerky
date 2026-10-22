@@ -32,7 +32,6 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
   const filterButtons = [
     { id: 'all', label: `Semua (${projectsData.length})` },
     { id: 'web', label: 'Web App' },
-    { id: 'uiux', label: 'UI/UX' },
     { id: 'mobile', label: 'Mobile' },
   ] as const;
 

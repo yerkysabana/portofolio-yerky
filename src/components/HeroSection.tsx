@@ -44,7 +44,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="inline-flex items-center gap-2.5 mb-6 px-3.5 py-1.5 rounded-full bg-white/[0.03] border border-white/10 w-fit">
             <span className="w-2 h-2 rounded-full bg-[#C6FF3D] animate-pulse"></span>
             <span className="text-xs font-mono uppercase tracking-[0.2em] text-zinc-300">
-              Frontend Dev & Product Designer
+              Frontend Developer & Informatics
             </span>
           </div>
 

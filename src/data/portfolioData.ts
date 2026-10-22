@@ -10,7 +10,7 @@ export const profileData: ProfileInfo = {
   location: 'Salatiga, Jawa Tengah (WIB)',
   email: 'yerkysabana1994@gmail.com',
   bio: 'Mahasiswa S1 Teknik Informatika UKSW yang berfokus pada Frontend Engineering & antarmuka responsif. Berpengalaman membangun UI modern dengan React, Next.js, dan arsitektur mobile terintegrasi REST API dengan performa tinggi.',
-  secondaryBio: 'Berpengalaman menangani implementasi frontend proyek riil mulai dari platform enterprise Trafix, ekosistem absensi digital YukAbsen, hingga portal Mobile Parking. Terbiasa memadukan estetika UI/UX yang bersih dengan keandalan integrasi backend secara sistematis.',
+  secondaryBio: 'Berpengalaman menangani implementasi frontend proyek riil mulai dari platform enterprise Trafix, ekosistem absensi digital YukAbsen, hingga portal Mobile Parking. Terbiasa memadukan antarmuka yang bersih dengan keandalan integrasi backend secara sistematis.',
 };
 
 export const projectsData: Project[] = [
@@ -170,5 +170,5 @@ export const tickerSkills: string[] = [
   'TURBOREPO & MONOREPO',
   'PHP & MYSQL',
   'PYTHON & OPENCV',
-  'RESPONSIVE UI/UX SLICING',
+  'RESPONSIVE WEB & MOBILE SLICING',
 ];

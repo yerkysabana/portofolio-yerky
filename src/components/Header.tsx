@@ -66,9 +66,13 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
             onClick={() => handleNavClick('hero')}
             className="flex items-center gap-2.5 group cursor-pointer text-left bg-transparent border-0 p-0"
           >
-            <span className="w-8 h-8 rounded-full bg-[#C6FF3D] text-[#0A0A0C] flex items-center justify-center font-bold text-xs tracking-tighter transition-transform group-hover:rotate-12 duration-300 font-mono">
-              YS
-            </span>
+            <div className="w-8 h-8 rounded-full overflow-hidden border border-[#C6FF3D]/70 flex-shrink-0 shadow-[0_0_10px_rgba(198,255,61,0.3)] bg-zinc-900 transition-transform group-hover:scale-105 duration-200">
+              <img
+                src="/avatar.jpg"
+                alt={profileData.name}
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
             <div className="flex items-baseline gap-1.5">
               <span className="font-bold text-sm tracking-tight text-white group-hover:text-[#C6FF3D] transition-colors">
                 {profileData.name}

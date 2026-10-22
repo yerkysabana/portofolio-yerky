@@ -39,24 +39,24 @@ export const AboutSection: React.FC = () => {
           </div>
 
           <h2 className="font-extrabold text-3xl sm:text-4xl text-white tracking-tight uppercase leading-tight">
-            Filosofi Desain, <br />
+            Rekayasa Frontend, <br />
             Kode Bersih, <br />
-            <span className="text-[#C6FF3D]">& Dampak Nyata.</span>
+            <span className="text-[#C6FF3D]">& Performa Cepat.</span>
           </h2>
 
-          {/* Profile Photo Card */}
-          <div className="mt-8 flex items-center gap-5 p-4 rounded-2xl bg-[#121216] border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.4)] group hover:border-[#C6FF3D]/40 transition-colors">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#C6FF3D]/60 flex-shrink-0 shadow-[0_0_20px_rgba(198,255,61,0.25)] bg-zinc-900 p-0.5">
+          {/* Profile Photo Card Centered */}
+          <div className="mt-8 flex flex-col items-center text-center p-6 rounded-2xl bg-[#121216] border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.4)] group hover:border-[#C6FF3D]/40 transition-colors">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-[#C6FF3D]/70 shadow-[0_0_25px_rgba(198,255,61,0.3)] bg-zinc-900 p-0.5 mb-4 group-hover:scale-105 transition-transform duration-300">
               <img
                 src="/headshot.jpg"
                 alt="Yerky Syabana"
-                className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover rounded-full"
               />
             </div>
             <div>
-              <p className="font-bold text-white text-base">Yerky Syabana</p>
+              <p className="font-bold text-white text-lg tracking-tight">Yerky Syabana</p>
               <p className="text-xs text-[#C6FF3D] font-mono mt-0.5">Frontend Developer</p>
-              <p className="text-xs text-[#8F909A] mt-2 leading-relaxed">
+              <p className="text-xs text-[#8F909A] mt-2 max-w-sm leading-relaxed">
                 UKSW Informatika &middot; Fokus pada slicing antarmuka presisi, performa responsif, dan integrasi API handal.
               </p>
             </div>
@@ -64,12 +64,12 @@ export const AboutSection: React.FC = () => {
 
           <div className="mt-6 space-y-4 text-[#8F909A] text-sm sm:text-base leading-relaxed">
             <p>
-              Saya memandang desain bukan sekadar hiasan visual, melainkan instrumen pemecahan
-              masalah bisnis yang paling tajam. Setiap piksel dan baris kode dibangun dengan sengaja.
+              Saya memandang rekayasa frontend bukan sekadar visual, melainkan instrumen pemecahan
+              masalah bisnis dan kenyamanan pengguna yang paling nyata. Setiap baris kode dibangun dengan sengaja.
             </p>
             <p>
-              Dengan latar belakang ganda di bidang UI/UX dan Rekayasa Frontend, saya menjembatani
-              kesenjangan antara estetika artistik dan realitas teknis performa web dan mobile.
+              Dengan fokus mendalam pada Rekayasa Frontend dan performa modern, saya menjembatani antarmuka
+              yang interaktif dengan keandalan teknis performa web dan ekosistem aplikasi mobile.
             </p>
           </div>
 
