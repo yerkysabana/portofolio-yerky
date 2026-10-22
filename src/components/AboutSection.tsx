@@ -44,7 +44,25 @@ export const AboutSection: React.FC = () => {
             <span className="text-[#C6FF3D]">& Dampak Nyata.</span>
           </h2>
 
-          <div className="mt-8 space-y-4 text-[#8F909A] text-sm sm:text-base leading-relaxed">
+          {/* Profile Photo Card */}
+          <div className="mt-8 flex items-center gap-5 p-4 rounded-2xl bg-[#121216] border border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.4)] group hover:border-[#C6FF3D]/40 transition-colors">
+            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-[#C6FF3D]/60 flex-shrink-0 shadow-[0_0_20px_rgba(198,255,61,0.25)] bg-zinc-900 p-0.5">
+              <img
+                src="/headshot.jpg"
+                alt="Yerky Syabana"
+                className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div>
+              <p className="font-bold text-white text-base">Yerky Syabana</p>
+              <p className="text-xs text-[#C6FF3D] font-mono mt-0.5">Frontend Developer</p>
+              <p className="text-xs text-[#8F909A] mt-2 leading-relaxed">
+                UKSW Informatika &middot; Fokus pada slicing antarmuka presisi, performa responsif, dan integrasi API handal.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 space-y-4 text-[#8F909A] text-sm sm:text-base leading-relaxed">
             <p>
               Saya memandang desain bukan sekadar hiasan visual, melainkan instrumen pemecahan
               masalah bisnis yang paling tajam. Setiap piksel dan baris kode dibangun dengan sengaja.

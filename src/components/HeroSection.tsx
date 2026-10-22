@@ -121,12 +121,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-16 h-16 rounded-2xl bg-zinc-800 border border-white/15 overflow-hidden flex-shrink-0 relative">
+              <div className="w-16 h-16 rounded-full bg-zinc-800 border-2 border-[#C6FF3D]/50 overflow-hidden flex-shrink-0 relative shadow-[0_0_15px_rgba(198,255,61,0.25)]">
                 <img
-                  alt="Profile Avatar"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlEfPAwWqyB_bfuRn6JW2U2VPr0eglA2FZisg6Vb8x850wxpnnuu5r4q6mnL_0tl6kFj8wQM8lSevk2e2_HHAnyGmZ8tqU98KFWb3ldmorykAZrYZzaj0ENFov7tCwGLRUdnnHkRn-E6kLbzzUB7N0CdOuWrgc1qA0K89nNP9z4MLqMqHcox29TY_ClzWje5saZoM2fB_TNVeKJj3CWEq7ooLKgvrW58HcIMQeNEEtxht56LMkdNa8qg"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500"
+                  alt={profileData.name}
+                  src="/avatar.jpg"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div>
