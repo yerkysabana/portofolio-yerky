@@ -148,10 +148,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               <div className="p-2.5 rounded-xl bg-white/[0.02] border border-white/5">
                 <p className="text-lg font-extrabold text-[#C6FF3D] tracking-tight font-mono">
-                  {profileData.clientSatisfaction}
+                  3.52
                 </p>
                 <p className="text-[10px] font-mono uppercase tracking-wider text-[#8F909A]">
-                  Kepuasan Klien
+                  IPK UKSW
                 </p>
               </div>
             </div>

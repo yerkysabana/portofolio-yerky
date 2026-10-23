@@ -7,7 +7,7 @@ export interface Project {
   summary: string;
   description: string;
   tags: string[];
-  image: string;
+  image?: string;
   metrics: { label: string; value: string }[];
   features: string[];
   colSpan?: 1 | 2;
@@ -36,7 +36,7 @@ export interface ProfileInfo {
   title: string;
   experienceYears: string;
   projectsCompleted: string;
-  clientSatisfaction: string;
+  clientSatisfaction?: string;
   availability: string;
   location: string;
   email: string;

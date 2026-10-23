@@ -5,7 +5,6 @@ export const profileData: ProfileInfo = {
   title: 'Frontend Developer & Informatics Engineer',
   experienceYears: '1+',
   projectsCompleted: '6+',
-  clientSatisfaction: '100%',
   availability: 'Tersedia untuk Peluang & Proyek',
   location: 'Salatiga, Jawa Tengah (WIB)',
   email: 'yerkysabana1994@gmail.com',
@@ -23,7 +22,6 @@ export const projectsData: Project[] = [
     summary: 'Monorepo antarmuka web enterprise untuk manajemen operasional, monitoring trafik, portal admin/teknisi, keuangan, hingga tampilan digital signage.',
     description: 'Arsitektur frontend modular berbasis Turborepo yang mencakup 4 sub-aplikasi mandiri: Admin Teknisi, Finance, Operator, dan Signage. Dioptimasi untuk pengelolaan tiket perbaikan perangkat, pelacakan status operasional real-time, dan pelaporan keuangan terpadu.',
     tags: ['Turborepo', 'React', 'TypeScript', 'Tailwind CSS', 'REST API'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
     metrics: [
       { label: 'Sub-aplikasi', value: '4 Portal (Admin, Finance, Operator, Signage)' },
       { label: 'Arsitektur', value: 'Turborepo Monorepo' },
@@ -48,7 +46,6 @@ export const projectsData: Project[] = [
     summary: 'Ekosistem absensi digital mobile berbasis Expo/React Native dengan geolokasi/peta dan dashboard monitoring admin Next.js 16.',
     description: 'Membangun aplikasi mobile absensi karyawan menggunakan Expo (React Native), NativeWind, TanStack Query, dan React Native Maps untuk validasi radius kehadiran (geofencing). Dilengkapi dashboard web admin interaktif Next.js 16, Leaflet, dan visualisasi Recharts.',
     tags: ['React Native', 'Expo', 'Next.js 16', 'TanStack Query', 'Leaflet'],
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80',
     metrics: [
       { label: 'Platform', value: 'Android & Web Admin' },
       { label: 'Geofencing', value: 'Radius GPS Presisi' },
@@ -73,7 +70,6 @@ export const projectsData: Project[] = [
     summary: 'Portal monitoring parkir cerdas berbasis Next.js 16 dan aplikasi mobile Flutter untuk tracking slot ketersediaan dan transaksi parkir.',
     description: 'Mengembangkan website monitoring ketersediaan area parkir dan transaksi secara real-time menggunakan Next.js dan Tailwind CSS, terhubung dengan integrasi REST API backend serta aplikasi pendukung mobile.',
     tags: ['Next.js 16', 'React 19', 'Tailwind CSS', 'Recharts', 'Flutter'],
-    image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=1200&q=80',
     metrics: [
       { label: 'Monitoring Slot', value: 'Real-time Status' },
       { label: 'Tampilan', value: 'Responsif Mobile & Web' },
@@ -98,7 +94,6 @@ export const projectsData: Project[] = [
     summary: 'Sistem reservasi tiket konser interaktif berbasis PHP/MySQL serta deteksi objek warna real-time via webcam dengan Python OpenCV.',
     description: 'Proyek pengembangan sistem pemesanan tiket konser lengkap dengan otentikasi akun, manajemen kuota tiket, dan operasi CRUD menggunakan PHP dan MySQL, didukung riset terapan pengolahan citra digital untuk deteksi warna berbasis HSV menggunakan Python dan OpenCV.',
     tags: ['PHP', 'MySQL', 'Python', 'OpenCV', 'JavaScript'],
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80',
     metrics: [
       { label: 'Teknologi', value: 'Fullstack Web + AI' },
       { label: 'Otentikasi', value: 'Role-based Access' },

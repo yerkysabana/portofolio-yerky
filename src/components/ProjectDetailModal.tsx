@@ -106,17 +106,6 @@ export const ProjectDetailModal: React.FC<ProjectDetailModalProps> = ({ project,
 
         {/* Scrollable Modal Content */}
         <div className="overflow-y-auto space-y-6 pt-6 pr-1">
-          {/* Main Visual Banner */}
-          <div className="w-full h-56 sm:h-72 rounded-2xl bg-[#09090C] border border-white/10 overflow-hidden relative">
-            <img
-              alt={project.title}
-              src={project.image}
-              referrerPolicy="no-referrer"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#121216] via-transparent to-transparent opacity-80"></div>
-          </div>
-
           {/* Description */}
           <div>
             <h3 className="text-sm font-mono uppercase tracking-wider text-[#C6FF3D] mb-2">

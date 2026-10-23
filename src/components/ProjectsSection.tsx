@@ -9,7 +9,7 @@ interface ProjectsSectionProps {
 }
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProject }) => {
-  const [activeFilter, setActiveFilter] = useState<'all' | 'web' | 'uiux' | 'mobile'>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'web' | 'mobile'>('all');
   const [hoveredCardId, setHoveredCardId] = useState<string | null>(null);
   const [mousePos, setMousePos] = useState<{ [key: string]: { x: number; y: number } }>({});
 
@@ -95,11 +95,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                   '--mouse-y': `${pos.y}px`,
                 } as React.CSSProperties
               }
-              className={`spotlight-card rounded-3xl bg-[#121216]/90 border border-white/10 overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:border-white/25 cursor-pointer ${
+              className={`spotlight-card rounded-3xl bg-[#121216]/90 border border-white/10 p-6 sm:p-8 flex flex-col justify-between group transition-all duration-300 hover:border-[#C6FF3D]/40 cursor-pointer ${
                 isLarge ? 'md:col-span-2' : 'md:col-span-1'
               }`}
             >
-              <div className="p-6 sm:p-8">
+              <div>
                 {/* Top Badge Row & Arrow Trigger */}
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-2 flex-wrap">
@@ -122,12 +122,24 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                 <h3 className="font-bold text-xl sm:text-2xl text-white tracking-tight group-hover:text-[#C6FF3D] transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-[#8F909A] text-sm mt-2 leading-relaxed">
+                <p className="text-[#8F909A] text-sm mt-2.5 leading-relaxed">
                   {project.summary}
                 </p>
 
-                {/* Tags */}
-                <div className="flex flex-wrap items-center gap-2 mt-5">
+                {/* Key Metrics / Highlights */}
+                <div className={`grid ${isLarge ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1 sm:grid-cols-2'} gap-2.5 my-6`}>
+                  {project.metrics.slice(0, isLarge ? 3 : 2).map((m) => (
+                    <div key={m.label} className="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                      <span className="text-[10px] uppercase font-mono text-[#8F909A] block">{m.label}</span>
+                      <span className="text-xs sm:text-sm font-bold text-white font-mono mt-0.5 block leading-snug">{m.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Bottom Footer: Tags & Action Affordance */}
+              <div className="pt-4 border-t border-white/5 flex items-center justify-between gap-3 flex-wrap">
+                <div className="flex flex-wrap items-center gap-1.5">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -137,35 +149,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
                     </span>
                   ))}
                 </div>
-              </div>
 
-              {/* Preview Image Area */}
-              <div className="px-6 sm:px-8 pb-6 sm:pb-8 pt-1">
-                <div
-                  className={`w-full rounded-2xl bg-[#09090C] border border-white/10 overflow-hidden relative group-hover:border-[#C6FF3D]/30 transition-colors ${
-                    isLarge ? 'h-52 sm:h-64' : 'h-44 sm:h-52'
-                  }`}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121216] via-transparent to-transparent z-10 opacity-70"></div>
-                  <img
-                    alt={project.title}
-                    src={project.image}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover opacity-80 group-hover:scale-105 group-hover:opacity-95 transition-all duration-700"
-                  />
-
-                  {/* Corner indicator badge for live production or click affordance */}
-                  {project.id === 'fintech-analytics' ? (
-                    <div className="absolute bottom-3.5 left-3.5 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0A0A0C]/90 backdrop-blur-md border border-white/15 text-[11px] font-mono text-zinc-300">
-                      <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                      <span>Live Production</span>
-                    </div>
-                  ) : (
-                    <div className="absolute bottom-3.5 right-3.5 z-20 flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#0A0A0C]/80 backdrop-blur-md border border-white/10 text-[10px] font-mono text-zinc-400 group-hover:text-white transition-colors">
-                      <Sparkles className="w-3 h-3 text-[#C6FF3D]" />
-                      <span>Eksplor Detail</span>
-                    </div>
-                  )}
+                <div className="flex items-center gap-1.5 text-xs font-mono text-[#C6FF3D] group-hover:translate-x-1 transition-transform">
+                  <Sparkles className="w-3.5 h-3.5 text-[#C6FF3D]" />
+                  <span>Lihat Detail &rarr;</span>
                 </div>
               </div>
             </div>
