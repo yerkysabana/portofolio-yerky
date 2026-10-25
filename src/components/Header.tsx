@@ -49,7 +49,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
   return (
     <header
-      className={`fixed top-12 left-0 right-0 z-40 px-4 sm:px-6 transition-all duration-300 ${
+      className={`fixed top-4 sm:top-6 left-0 right-0 z-40 px-4 sm:px-6 transition-all duration-300 ${
         visible ? 'translate-y-0 opacity-100' : '-translate-y-24 opacity-0 pointer-events-none'
       }`}
     >
